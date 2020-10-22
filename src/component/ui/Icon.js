@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Icon = (props) => {
     return (
-        <a target="_new" href={props.link}>
+        <a rel="noopener noreferrer" target="_blank" href={props.link}>
             <IconImg src={props.src} />
         </a>);
 }

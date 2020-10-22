@@ -11,7 +11,7 @@ const Contact = () => {
             <Wrapper>
                 <LinkStyled href="mailto:kamilzaku@gmail.com">kamilzaku@gmail.com</LinkStyled>
                 <SpanStyled>or</SpanStyled>
-                <LinkStyled target="_new" href="https://www.linkedin.com/in/kamilzakFrontEnd">Linkedin</LinkStyled>
+                <LinkStyled rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/kamilzakFrontEnd">Linkedin</LinkStyled>
             </Wrapper>
         </div>);
 }

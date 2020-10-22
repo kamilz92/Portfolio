@@ -12,8 +12,8 @@ const Project = (props) => {
             <ParagraphTechno thin>{props.technologies}</ParagraphTechno>
             <ParagraphDescription>{props.description}</ParagraphDescription>
             <ButtonWrapper>
-                <Button target="_new" href={props.codeLink}>Code</Button>
-                <Button target="_new" href={props.liveLink}>Live</Button>
+                <Button target="_blank" href={props.liveLink}>Live</Button>
+                <Button target="_blank" href={props.codeLink}>Code</Button>
             </ButtonWrapper>
 
         </ProjectDiv>

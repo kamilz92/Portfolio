@@ -1,14 +1,20 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import styled from 'styled-components';
 import LinkStyled from '../ui/LinkStyled';
+import { LangContext } from '../../context/LangContext';
+import eng from '../../json/eng.json';
+import nor from '../../json/nor.json';
+
 
 const Nav = () => {
+    const {isEnglish} = useContext(LangContext);
+    const lang = isEnglish ? eng : nor;
     return (
         <nav>
             <UlStyled>
-                <LiStyled><SpanStyled>01</SpanStyled><LinkStyled as={LinkStyled} to="/projects">Projekter</LinkStyled></LiStyled>
-                <LiStyled><SpanStyled>02</SpanStyled><LinkStyled as={LinkStyled} to="/about">Om meg</LinkStyled></LiStyled>
-                <LiStyled><SpanStyled>03</SpanStyled><LinkStyled as={LinkStyled} to="/contact">Kontakt</LinkStyled></LiStyled>
+                <LiStyled><SpanStyled>01</SpanStyled><LinkStyled as={LinkStyled} to="/projects">{lang.nav.a}</LinkStyled></LiStyled>
+                <LiStyled><SpanStyled>02</SpanStyled><LinkStyled as={LinkStyled} to="/about">{lang.nav.b}</LinkStyled></LiStyled>
+                <LiStyled><SpanStyled>03</SpanStyled><LinkStyled as={LinkStyled} to="/contact">{lang.nav.c}</LinkStyled></LiStyled>
             </UlStyled>
         </nav>
     );

@@ -1,27 +1,33 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
-import { H2 } from '../component/typography/Heading';
+import { H2, H3 } from '../component/typography/Heading';
 import Icon from '../component/ui/Icon';
 import Paragraph from '../component/typography/Paragraph';
-import PolaroidPicture from '../component/ui/PolaroidPicture';
+
+import { LangContext } from '../context/LangContext';
+import eng from '../json/eng.json';
+import nor from '../json/nor.json';
+
 
 import gitImg from '../assets/GitHub-Mark-64px.png';
 import instagramImg from '../assets/instagram.png';
 import linkenImg from '../assets/linkedin-logo.png';
 
 const About = () => {
+    const { isEnglish } = useContext(LangContext);
+    const lang = isEnglish ? eng : nor;
     return (
         <div>
-            <HeadingStyled>Well that's me</HeadingStyled>
-            <Paragraph padding="2rem 0">I'm Polish but i've been living in Norway since I was 15 years old. 
-            I live in Bergen with my fiancé and cat named Luna. My hobbies are gaming, anime, technology, traveling, books and learning new things. </Paragraph>
+            <HeadingStyled>{lang.about.heading}</HeadingStyled>
+            <Paragraph padding="2rem 0">{lang.about.a}</Paragraph>
+
+            <Paragraph padding="1rem 0">{lang.about.b}</Paragraph>
+            <H3>{lang.about.c}</H3>
+            <Paragraph padding=".7rem 0 2rem">React, JS,HTML, CSS, Bootstrap, Less, SCSS, GIT, AdobePack, GULP</Paragraph>
             <Wrapper>
-                <PolaroidPicture />
-                <Wrapper2>
-                    <Icon link="https://github.com/kamilz92" src={gitImg} />
-                    <Icon link="https://www.instagram.com/k4milzak/" src={instagramImg} />
-                    <Icon link="https://www.linkedin.com/in/kamilzakFrontEnd" src={linkenImg} />
-                </Wrapper2>
+                <Icon link="https://github.com/kamilz92" src={gitImg} />
+                <Icon link="https://www.instagram.com/k4milzak/" src={instagramImg} />
+                <Icon link="https://www.linkedin.com/in/kamilzakFrontEnd" src={linkenImg} />
             </Wrapper>
         </div>
     );
@@ -42,13 +48,9 @@ export const HeadingStyled = styled(H2)`
 `;
 
 const Wrapper = styled.div`
+    width: 230px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-`;
-const Wrapper2 = styled.div`
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    margin-left: 1rem;
 `;
 export default About;

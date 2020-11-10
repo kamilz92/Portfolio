@@ -1,0 +1,27 @@
+{
+    "title": "Front End Utvikler",
+    "intro": {
+        "a": "Målet mitt er å bli full stack! Foreløpig fokuserer jeg hovedsakelig på REACT og blir dyktigere med det. I den kommende fremtiden har jeg tenkt å bli mer kjent med Node.js"
+    },
+    "nav": {
+        "a": "Projekter",
+        "b": "Om meg",
+        "c": "Kontakt"
+    },
+    "projectsInfo": {
+        "a": "Denne minimalistiske porteføljen, stylet med styled-components",
+        "b": "Bootstrap template",
+        "c": "Et enkelt søk som gjør det mulig å søke etter et spill, en film osv. Og legge den til favoritten"
+    },
+    "about" :{
+        "heading": "Litt om meg",
+        "a": "Jeg er en 28år gammel man fra Polen og har bodd i Norge siden jeg var 15. For fire år siden begynnte jeg å kodde, først som en hobby og ettervert som en karrieremulighet. Jeg ble nettopp fredig med 2års Front End utvikling utdanning hos Noroff.",
+        "b" : "Jeg bor i bergen sammen med min forlovet og katten vår Luna. Blant minne hobbier finner man gaming, anime, gym, fantasy bøker og populærvitenskapelig litteratur.",
+        "c" : "Hva jeg kan"
+    },
+    "contact": {
+        "heading": "Ta kontakt med meg",
+        "a": "Dersom du ønsker å vite mer om meg ta gjerne kontakt via:",
+        "or": "eller"
+    }
+}

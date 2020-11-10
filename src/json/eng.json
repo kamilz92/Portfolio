@@ -1,0 +1,27 @@
+{
+    "title": "Front End Developer",
+    "intro": {
+        "a": "My goal is to become full stack ! As for now I'm mainly focusing on REACT and getting more proficient with it. In the coming future I plan on getting deeper with Node.js"
+    },
+    "nav": {
+        "a": "Projects",
+        "b": "About me",
+        "c": "Contact"
+    },
+    "projectsInfo": {
+        "a": "This minimalist portfolio, styled with styled components",
+        "b": "Bootrstrap tamplete",
+        "c": "A simple search that allows to search for a game, movie etc. and add it to favourite"
+    },
+    "about" :{
+        "heading": "Well that's me",
+        "a": "I am a 28-year-old man from Poland and have lived in Norway since I was 15. Four years ago I started coding, first as a hobby and later as a career opportunity. I just became comfortable with 2 years of Front End development education at Noroff.",
+        "b": "I live in Bergen with my fiancé and our cat Luna. Memory hobbies include gaming, anime, gym, fantasy books and popular science literature.",
+        "c": "What I can" 
+    },
+    "contact": {
+        "heading": "Get in touch",
+        "a": "If thre is anything you are wondering about I would be more then willing to answer all your questions on",
+        "or": "or"
+    }
+}

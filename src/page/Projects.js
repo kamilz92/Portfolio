@@ -18,7 +18,7 @@ const Projects = () => {
                 liveLink="https://thirsty-visvesvaraya-e026ff.netlify.app/"
                 codeLink="https://github.com/kamilz92/Portfolio" />
             <Project
-                title="Solar Panles"
+                title="Solar Panels"
                 technologies="Bootstrap, scss"
                 delay='.5s'
                 description={lang.projectsInfo.b}
@@ -36,11 +36,9 @@ const Projects = () => {
 }
 
 const ProjectsDiv = styled.div`
-    padding: 0 20px;
-    height: 540px;
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    justify-content: space-evenly;
 `;
 export default Projects;

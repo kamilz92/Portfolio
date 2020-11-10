@@ -7,6 +7,9 @@ const GlobalStyle = createGlobalStyle`
         }
         html {
             font-size: 62.5%;
+            @media (max-width: 700px){
+                font-size: 50%;
+            }
         }
         p, a {
         font-family: ${({ theme }) => theme.secondaryFont};

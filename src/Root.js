@@ -48,6 +48,11 @@ const RootStyled = styled.div`
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
+  /*max height and width for bg*/
+  @media (max-height: 750px) and (max-width: 1300px){
+    background-repeat: repeat-x;
+    background-size: auto 9.5vh;
+  } 
 `;
 const ContentWrapper = styled.div`
   display: flex;

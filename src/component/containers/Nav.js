@@ -12,7 +12,7 @@ const Nav = () => {
     return (
         <nav>
             <UlStyled>
-                <LiStyled><SpanStyled>01</SpanStyled><LinkStyled as={LinkStyled} to="/projects">{lang.nav.a}</LinkStyled></LiStyled>
+                <LiStyled><SpanStyled>01</SpanStyled><LinkStyled as={LinkStyled} exact to="/">{lang.nav.a}</LinkStyled></LiStyled>
                 <LiStyled><SpanStyled>02</SpanStyled><LinkStyled as={LinkStyled} to="/about">{lang.nav.b}</LinkStyled></LiStyled>
                 <LiStyled><SpanStyled>03</SpanStyled><LinkStyled as={LinkStyled} to="/contact">{lang.nav.c}</LinkStyled></LiStyled>
             </UlStyled>

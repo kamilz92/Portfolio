@@ -26,9 +26,9 @@ function Root() {
               </Col>
               <Col>
                 <Switch>
-                  <Route path="/" exact render={() => <Redirect to="/projects" />} />
+                  <Route path="/" exact component={Projects} />
                   <Route path="/about" component={About} />
-                  <Route path="/projects" component={Projects} />
+                  <Route path="/projects" exact render={() => <Redirect to="/" />} />
                   <Route path="/contact" component={Contact} />
                 </Switch>
               </Col>

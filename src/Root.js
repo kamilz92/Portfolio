@@ -45,14 +45,10 @@ const RootStyled = styled.div`
   background-color: ${({ theme }) => theme.mainColor};
   color: ${({ theme }) => theme.mainBlack};
   background-image: url(${bgImg});
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-size: 100%;
   background-position: bottom;
-  /*max height and width for bg*/
-  @media (max-height: 750px) and (max-width: 1300px){
-    background-repeat: repeat-x;
-    background-size: auto 9.5vh;
-  } 
+
 `;
 const ContentWrapper = styled.div`
   display: flex;
@@ -62,7 +58,7 @@ const ContentWrapper = styled.div`
 
   @media (max-width: 700px){
     flex-wrap: wrap;
-    padding-bottom: 10vh;
+    padding-bottom: 5vh;
   }
 `;
 const Col = styled.div`

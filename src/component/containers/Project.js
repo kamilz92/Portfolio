@@ -37,6 +37,7 @@ const ProjectDiv = styled.div`
     border: 1px solid  ${({ theme }) => theme.mainBlack};
     margin:${props => props.middle ? '20px 0' : null} ;
     animation: ${Slide} .5s linear forwards ${props => props.delay};
+    background: ${({ theme }) => theme.mainColor};
 `;
 const ButtonWrapper = styled.div`
     display: flex;
